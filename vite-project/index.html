@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/utils/style/style.css">
+    <title>Restaut-FRESHDAILy</title>
+
+  </head>
+  <body>
+    <section class="section-head mb-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 d-none d-md-flex justify-content-around p-0">
+              <div class="col-5 pt-3 ps-5">
+                <nav class="navbar navbar-expand-lg mb-5">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <img src="./public/assets/imgs/logo.png" alt="logo" class="image-fluid logo">
+                    </li>
+                  </ul>
+                </nav>
+                <div class="block-speech">
+                  <h2 class=" mb-4">nos meilleurs Plats a votre disposition.</h2>
+                  <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="box mt-4">
+                    <a href="#" class="btn button btn__see-menu fw-bold">Voir le Menu</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 position-relative d-flex justify-content-end">
+                <div class="big-circle p-5 d-flex justify-content-center flex-wrap" style="background-color: blu;">
+                  <nav class="navbar navbar-expand-md">
+                    <ul class="navbar-nav">
+                      <li class="nav-item box">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item box">
+                        <a class="nav-link" href="#">Menu</a>
+                      </li>
+                      <li class="nav-item box">
+                        <a class="nav-link" href="#">Apropos</a>
+                      </li>
+                      <li class="nav-item">
+                        <svg class="nav-link" width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Interface / Line_Xl"><path id="Vector" d="M12 21V3" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+                        </svg>
+                      </li>
+                      <li class="nav-item box">
+                        <span class="nav-link"><small class="fw-light">Commandez</small> <br>0813019155</span>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="small-circle"></div>
+                </div>
+                <div class="block-food position-absolute text-end">
+                  <img src="./public/assets/imgs/pexels-david-geib-3220617-removebg-preview 1.png" alt="img-food" class="image-fluid">
+                </div>
+              </div>
+            </div>
+            <!-- menu mobile -->
+            <div class="col-12 block-mobile d-block d-md-none position-relative">
+              
+                <nav class="nav navbar">
+                  <ul class="navbar-nav navbar-mobile  d-flex flex-row justify-content-between w-100">
+                    <li class="nav-item">
+                        <img src="./public/assets/imgs/logo.png" alt="" class="image-fluid logo-mobile">
+                    </li>
+                    
+                    <li class="nav-item pt-2 pb-1 box">
+                      <button type="button" class="btn btn-menu p-1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg width="60px" height="60px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9 12C9 12.5523 8.55228 13 8 13C7.44772 13 7 12.5523 7 12C7 11.4477 7.44772 11 8 11C8.55228 11 9 11.4477 9 12Z" fill="#FFFF"/>
+                          <path d="M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12Z" fill="#FFFF"/>
+                          <path d="M17 12C17 12.5523 16.5523 13 16 13C15.4477 13 15 12.5523 15 12C15 11.4477 15.4477 11 16 11C16.5523 11 17 11.4477 17 12Z" fill="#FFFF"/>
+                          <path d="M7 3.33782C8.47087 2.48697 10.1786 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 10.1786 2.48697 8.47087 3.33782 7" stroke="#FFFF" stroke-width="1.5" stroke-linecap="round"/>
+                          </svg>
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+
+                
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div>
+                      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                    </div>
+                    <div class="dropdown mt-3">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                        Dropdown button
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <h2 class="title fw-bold mt-5">nos meilleurs Plats a votre disposition.</h2>
+                  <div class="col-12 mt-4 d-flex" style="background-color: re;">
+                    <div class="col-5">
+                      <p class="fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-7 ps-2 pe-2 pt-2 pb-2 text-end box">
+                      <a href="#" class="button btn btn__see-menu-mobile fw-bold">Voir le Menu</a>
+                    </div>
+                  </div>
+                </div>
+               
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+    <section class="section-last-menu mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="title-last-menu text-center mb-5 mt-5">
+            <h2 class="fw-bold">DERNIER MENU</h2>
+          </div>
+          <div class="col-12 d-md-flex mb-5">
+            <div class="col-12 col-md-6 position-relative box">
+              <img src="./public/assets/imgs/Rectangle 8.png" alt="" class="img-thumbnail ps-0">
+              <h2 class="title title-food title-food_pizza position-absolute fw-bold">super pizza</h2>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex justify-content-around">
+                <div class="box">
+                  <img src="./public/assets/imgs/Rectangle 9.png" alt="" class="img-thumbnail">
+                </div>
+                <div class="box">
+                  <img src="./public/assets/imgs/Rectangle 10.png" alt="" class="img-thumbnail pe-0">
+                </div>
+              </div>
+              <div class=" d-flex justify-content-center position-relative box">
+                <img src="./public/assets/imgs/Rectangle 11.png" alt="" class="img-thumbnail pe-0">
+                <h2 class="title title-food title-food_frites fw-bold  position-absolut">UBORA FRITES</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-5">
+            <div class="d-flex justify-content-evenly">
+              <h3 class="food-plats box">poulet Mayo</h3>
+              <h3 class="food-plats box">frites</h3>
+              <h3 class="food-plats box">Humberger</h3>
+            </div>
+            <div class="col-12 mt-5 d-flex justify-content-around flex-wrap">
+              <div class="col-12 col-md-3 order-plan order-plan_chicken pt-3">
+                <div >
+                  <img src="./public/assets/imgs/Rectangle 17.png" alt="plan-poulet" class="img-thumbnail">
+                </div>
+                <div class="p-3">
+                  <h3 class="fw-bold mb-3">Poulet Mayo</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua.</p>
+                  <h2 class="pt-3">12000 fc</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 order-plan order-plan_fries box pt-0 pb-3">
+                <div class="">
+                  <img src="./public/assets/imgs/Rectangle 13.png" alt="plan-frites" class="img-thumbnail">
+                </div>
+                <div class="p-3 pt-5 ">
+                  <h3 class="fw-bold mb-3 mt-3">Poulet Mayo</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua.</p>
+                  <h2 class="pt-3">7500 fc</h2>
+                  <button type="button" class="btn button btn__order shadow-lg mt-4">COMMANDER</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 order-plan order-plan_humberger pt-3">
+                <div >
+                  <img src="./public/assets/imgs/Rectangle 15.png" alt="plan-Humberger" class="img-thumbnail" width="345px">
+                </div>
+                <div class="p-3">
+                  <h3 class="fw-bold mb-3">Poulet Mayo</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  incididunt ut labore et dolore magna aliqua.</p>
+                  <h2 class="pt-3">5000 fc</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+     <!-- Add your site or application content here -->
+    <script type="module" src="/main.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

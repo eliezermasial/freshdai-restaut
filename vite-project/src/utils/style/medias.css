@@ -1,0 +1,51 @@
+@media (max-width:768px) {
+    /* section haeder*/
+
+   .block-mobile{
+    color: #FFFF;
+   }
+
+   .circle-mobile{
+    background-color: #BFD91E;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+   }
+
+   .navbar-mobile{
+    display: flex !important;
+   }
+
+   .logo-mobile{
+    width: 200px;
+    height: 78px;
+   }
+
+   .btn-menu{
+    box-shadow: none !important;
+    background-color: #BFD91E;
+    border: #FFFF 1px solid;
+    border-radius: 50%;
+    transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+   }
+
+   .btn-menu:hover{
+    background-color: #96ac09;
+   }
+   
+   .btn__see-menu-mobile{
+    box-shadow: none !important;
+    width: 170px !important;
+    height: 74.79px;
+   }
+
+}
+
+@media (max-width:992px) {
+    
+    
+
+    
+    
+   
+}
