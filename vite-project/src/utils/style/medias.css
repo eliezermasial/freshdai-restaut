@@ -63,4 +63,8 @@
         width: 35px !important;
         padding-left: 0px !important;
     }
+
+    .beverage_contenu_sm__width{
+        width: 100% !important;
+    }
 }

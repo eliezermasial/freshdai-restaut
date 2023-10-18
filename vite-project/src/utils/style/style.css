@@ -46,6 +46,7 @@ h2 {
 .box:hover {
   z-index: 4;
   transform: scale(1.2);
+  overflow: hidden !important;
 }
 
 .button {
@@ -175,6 +176,17 @@ h2 {
 .section-promo .img-promo-pizza_bg {
   background-color: transparent !important;
   border: none !important;
+}
+
+.section-beverage {
+  overflow: hidden !important;
+}
+.section-beverage .beverage_contenu {
+  width: 197px;
+}
+.section-beverage .beverage_contenu h3, .section-beverage .beverage_contenu h2 {
+  font-size: 30px;
+  line-height: 35.55px;
 }
 
 /*# sourceMappingURL=style.css.map */

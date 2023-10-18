@@ -58,6 +58,7 @@ h2{
   &:hover{
     z-index: 4;
     transform: scale(1.2);
+    overflow: hidden !important;
   }
 
  }
@@ -217,3 +218,16 @@ h2{
   background-image: linear-gradient(to bottom, #00000054, #000), url(../img/unsplash_Lks7vei-eAg.png);
   */
 }
+
+.section-beverage{
+  overflow: hidden !important;
+  .beverage_contenu{
+    width: 197px;
+    h3,h2{
+      font-size: 30px;
+      line-height: 35.55px;
+    }
+  }
+
+}
+
