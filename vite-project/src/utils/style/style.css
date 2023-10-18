@@ -44,6 +44,7 @@ h2 {
   transition: transform 0.4s cubic-bezier(0.2, 1.83, 0.42, 1.19);
 }
 .box:hover {
+  z-index: 4;
   transform: scale(1.2);
 }
 
@@ -66,43 +67,46 @@ h2 {
   background-color: #ADC41D;
 }
 .section-head .big-circle {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 115px;
   background-color: #BFD91E;
   width: 600px;
   height: 600px;
   border-radius: 50%;
 }
-.section-head .big-circle nav li {
+.section-head .big-circle .small-circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: rgba(158, 180, 15, 0.4235294118);
+}
+.section-head .nav-menu {
+  top: 50px;
+  right: 130px;
+}
+.section-head .nav-menu nav li {
   padding-left: 0px;
   padding-right: 0px;
 }
-.section-head .big-circle nav li a, .section-head .big-circle nav li span {
+.section-head .nav-menu nav li a, .section-head .nav-menu nav li span {
   font-size: 18px;
   font-weight: 700;
   color: #FFFFFF;
   padding-left: 0.2rem !important;
   padding-right: 0.2rem !important;
 }
-.section-head .big-circle nav li a:hover, .section-head .big-circle nav li span:hover {
+.section-head .nav-menu nav li a:hover, .section-head .nav-menu nav li span:hover {
   color: #595959;
   text-decoration: underline !important;
   transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
-}
-.section-head .big-circle .small-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background-color: rgba(158, 180, 15, 0.4235294118);
 }
 .section-head .logo {
   width: 315px;
   height: 78px;
 }
 .section-head .block-speech {
+  z-index: 3;
   color: #FFFFFF;
   margin-top: 100px;
 }
@@ -136,6 +140,14 @@ h2 {
 .section-last-menu .food-plats:hover {
   font-weight: 700;
 }
+.section-last-menu .small-bar::after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 63px;
+  height: 2px;
+  background-color: #ADC41D;
+}
 .section-last-menu .order-plan {
   text-align: center;
   width: 365px;
@@ -150,6 +162,19 @@ h2 {
 .section-last-menu .btn__order {
   background-color: #ADC41D;
   padding-top: 0 !important;
+}
+
+.section-promo {
+  background: url(/vite-project/public/assets/imgs/Rectangle\ 18.png);
+  background-position: center;
+  background-size: cover;
+  /*
+  background-image: linear-gradient(to bottom, #00000054, #000), url(../img/unsplash_Lks7vei-eAg.png);
+  */
+}
+.section-promo .img-promo-pizza_bg {
+  background-color: transparent !important;
+  border: none !important;
 }
 
 /*# sourceMappingURL=style.css.map */

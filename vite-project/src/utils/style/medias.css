@@ -43,9 +43,24 @@
 
 @media (max-width:992px) {
     
-    
+    .big-circle_sm{
+        
+        padding: px !important;
+        width: 550px !important;
+        height: 550px !important;
+        
+    }
+    .small-circle_sm{
+        width: 300px !important;
+        height: 300px !important;
+    }
 
-    
-    
-   
+    .nav-menu_sm{
+        right: 80px !important;
+    }
+
+    .nav-item3 {
+        width: 35px !important;
+        padding-left: 0px !important;
+    }
 }

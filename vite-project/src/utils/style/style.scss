@@ -56,7 +56,8 @@ h2{
   position: relative;
   transition: transform 0.4s cubic-bezier(0.2,1.83,0.42,1.19);
   &:hover{
-  transform: scale(1.2);
+    z-index: 4;
+    transform: scale(1.2);
   }
 
  }
@@ -78,14 +79,29 @@ h2{
 }
 
 .section-head{
-
   background-color: $green-color;
+  
   .big-circle{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 115px;
     background-color: #BFD91E;
     width: 600px;
     height: 600px;
     border-radius: 50%;
+    
+    .small-circle{
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background-color: #9eb40f6c;
+    }
+  }
+
+  .nav-menu{
+    top: 50px;
+    right: 130px;
+
     nav li{
       padding-left: 0px;
       padding-right: 0px;
@@ -103,17 +119,7 @@ h2{
         }
       }
     }
-    
-    .small-circle{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 20vh;
-      width: 400px;
-      height: 400px;
-      border-radius: 50%;
-      background-color: #9eb40f6c;
-    }
+
   }
   
   .logo{
@@ -122,6 +128,7 @@ h2{
   }
 
   .block-speech{
+    z-index: 3;
     color: $colol-white;
     margin-top: 100px;
 
@@ -168,6 +175,15 @@ h2{
     font-weight: 700;
   }
 
+  .small-bar::after{
+    content: '';
+    display: block;
+    text-align: center;
+    width: 63px;
+    height: 2px;
+    background-color: $green-color;
+  }
+
   .order-plan{
     text-align: center;
     width: 365px;
@@ -188,3 +204,16 @@ h2{
   }
 }
 
+.section-promo{
+  background: url(/vite-project/public/assets/imgs/Rectangle\ 18.png);
+  background-position: center;
+  background-size: cover;
+
+  .img-promo-pizza_bg{
+    background-color: transparent !important;
+    border: none !important;
+  }
+  /*
+  background-image: linear-gradient(to bottom, #00000054, #000), url(../img/unsplash_Lks7vei-eAg.png);
+  */
+}
