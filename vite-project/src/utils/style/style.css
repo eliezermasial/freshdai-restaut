@@ -25,6 +25,7 @@ body {
   color: #595959;
 }
 
+/* les classes et les elements general*/
 h2 {
   font-size: 35px;
   color: #ADC41D;
@@ -62,6 +63,20 @@ h2 {
 .button:hover {
   background-color: #BFD91E !important;
   color: #595959;
+}
+
+.img-thumbnail_bg {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.small-bar__color::after {
+  content: "";
+  display: block;
+  text-align: center;
+  width: 63px;
+  height: 2px;
+  background-color: #ADC41D;
 }
 
 .section-head {
@@ -141,14 +156,6 @@ h2 {
 .section-last-menu .food-plats:hover {
   font-weight: 700;
 }
-.section-last-menu .small-bar::after {
-  content: "";
-  display: block;
-  text-align: center;
-  width: 63px;
-  height: 2px;
-  background-color: #ADC41D;
-}
 .section-last-menu .order-plan {
   text-align: center;
   width: 365px;
@@ -173,13 +180,20 @@ h2 {
   background-image: linear-gradient(to bottom, #00000054, #000), url(../img/unsplash_Lks7vei-eAg.png);
   */
 }
-.section-promo .img-promo-pizza_bg {
-  background-color: transparent !important;
-  border: none !important;
-}
 
 .section-beverage {
   overflow: hidden !important;
+}
+.section-beverage .title {
+  text-transform: capitalize;
+  font-size: 30px;
+  line-height: 35.55px;
+  color: #000000;
+}
+.section-beverage .small-bar__color_position {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 .section-beverage .beverage_contenu {
   width: 197px;
@@ -187,6 +201,53 @@ h2 {
 .section-beverage .beverage_contenu h3, .section-beverage .beverage_contenu h2 {
   font-size: 30px;
   line-height: 35.55px;
+}
+
+.section-order-burger {
+  margin-top: 20%;
+  margin-bottom: 50%;
+  background-color: #ADC41D;
+}
+.section-order-burger .parallelogram {
+  z-index: 99 !important;
+  width: 283.71px;
+  height: 59.94px;
+  left: 190.74px;
+  color: var(--bs-dark);
+  border: 1px solid #ADC41D !important;
+  background-color: #BFD91E;
+  -moz-transform: skew(-15deg, 0deg);
+  -o-transform: skew(-15deg, 0deg);
+  -webkit-transform: skew(-15deg, 0deg);
+  transform: skew(-15deg, 0deg);
+}
+.section-order-burger .parallelogram h3 {
+  color: #FFFFFF;
+  font-size: 30px;
+  line-height: 35.55px;
+}
+.section-order-burger .title {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 47.4px;
+}
+
+.big_circle {
+  display: flex;
+  justify-content: center;
+  padding-top: 115px;
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border-top: none;
+}
+
+.small_circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: rgba(158, 180, 15, 0.4235294118);
 }
 
 /*# sourceMappingURL=style.css.map */
